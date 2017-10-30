@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+    <title>slides</title>
+    <style>
+        #slideMain {            
+            width:800px;
+            border: solid 1px black;
+            height: 500px;
+            position: relative;top: 0; left: 0;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .slide {
+            width:800px;
+            height: 500px;
+            position: absolute;top: 0px;
+        }
+
+        .slides {
+            animation-name:myfirst; 
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-timing-function: ease;
+            animation-fill-mode:forwards;
+            animation-iteration-count: infinite;
+        }
+        #s1 {
+            left: 0px;
+            /* animation-delay: 0s; */
+        }
+        #s2 {
+            left: 800px;
+            /* animation-delay: 2.5s; */
+        }
+        #s3 {
+            left: 1600px;
+            /* animation-delay: 5s; */
+        }
+        #s4 {
+            left: 2400px;
+            /* animation-delay: 7.5s; */
+        }
+        #s5{
+            left: 3200px;
+        }
+
+        @keyframes myfirst { 
+             0%{transform: translateX(0);}
+             10%{transform: translateX(-800px);}
+             25%{transform: translateX(-800px);}
+             35%{transform: translateX(-1600px);}
+             50%{transform: translateX(-1600px);}
+             60%{transform: translateX(-2400px);}
+             75%{transform: translateX(-2400px);}
+             85%{transform: translateX(-3200px);}
+             100%{transform: translateX(-3200px);}
+             
+        }
+  
+    </style>
+</head>
+<body>
+    <div id="slideMain">
+         <div class="slides">
+                 <img class="slide" src="images/img11.jpg" id="s1">
+                 <img class="slide" src="images/img12.jpg" id="s2">
+                 <img class="slide" src="images/img13.jpg" id="s3">
+                 <img class="slide" src="images/img14.jpg" id="s4">
+                 <img class="slide" src="images/img11.jpg" id="s5">
+         </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>font</title>
+  <style>
+      html {
+        font-size:  32px;
+      }
+      #test1 span:nth-child(1){font-size: 120%;
+      font-family: LiSu;
+      color: red;
+      }
+      #test1 span:nth-child(2){font-size: 1.2em;
+      font-family: "楷体";
+      color: green;
+      }
+      #test1 span:nth-child(3){font-size: 1.2rem;
+      font-family: "楷体";
+      color: blue;
+      }
+      #test1 span:nth-child(4){font-size: xx-large;
+      font-family:"幼圆" ;
+      color: rgb(185,185,185);
+      }
+      #test2 span:nth-child(1){font-style: italic;
+      color: green;
+      text-decoration: line-through;
+      font-family: "宋体";
+      }
+      #test2 span:nth-child(2){font-weight: bolder;
+      color: purple;
+      text-decoration: overline;
+      }
+      #test2 span:nth-child(3){font-weight: 700;
+      color: brown;
+      font-family: "宋体";
+      text-decoration: underline;
+      }
+      #test3 span:nth-child(1){font-family: "宋体";
+      color: green;
+      text-shadow: 4px 4px 4px #999999;
+      }
+      #test3 span:nth-child(2){font-size: 200%;
+      font-family: "宋体";
+      color: rgb(250,40,40);
+      text-shadow: 4px 4px 4px #999999,-4px -4px 4px rgb(255,139,139);
+      
+      }
+      #test3 span:nth-child(3){font-family: "宋体";
+      letter-spacing: 20px;
+      color: brown;
+      }
+   </style>
+
+</head>
+<body>
+    <div style="font-size: 24px">
+        <p id="test1">
+            字体1：<span>用120%显示字体大小</span> <span>用1.2em显示字体大小</span> <span>用1.2rem显示字体大小</span> <span>用xx-large显示字体大小</span>
+        </p>
+        <p id="test2">
+            字体2：<span>用斜体显示文字</span> <span>用粗体bolder显示文字</span> <span>用粗体700显示文字</span>
+        </p>
+        <p id="test3">
+            字体3：<span>给文字加上阴影</span> <span>给文字加上双阴影</span> <span>改变字符之间的间距</span>
+        </p>
+ 
+    </div>
+</body>
+</html>
